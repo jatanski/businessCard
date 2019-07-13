@@ -33,9 +33,10 @@ class Menu extends Component {
   }
   render() {
     return (
-      <nav className="Menu">
-        <ul>
-          <li>
+      <nav className="menu">
+        <h2 className="menu__title">Menu</h2>
+        <ul className="menu__list">
+          <li className="menu__list__el">
             <Link to="/">
               {this.state.home ? (
                 <span className="active">Home</span>
@@ -44,7 +45,7 @@ class Menu extends Component {
               )}
             </Link>
           </li>
-          <li>
+          <li className="menu__list__el">
             <Link to="/about-me">
               {this.state.aboutMe ? (
                 <span className="active">About me</span>
@@ -53,7 +54,7 @@ class Menu extends Component {
               )}
             </Link>
           </li>
-          <li>
+          <li className="menu__list__el">
             <Link to="/skills">
               {this.state.skills ? (
                 <span className="active">Skills</span>
@@ -62,7 +63,7 @@ class Menu extends Component {
               )}
             </Link>
           </li>
-          <li>
+          <li className="menu__list__el">
             <Link to="/projects">
               {this.state.projects ? (
                 <span className="active">Projects</span>
@@ -71,7 +72,7 @@ class Menu extends Component {
               )}
             </Link>
           </li>
-          <li>
+          <li className="menu__list__el">
             <Link to="/contact">
               {this.state.contact ? (
                 <span className="active">Contact & CV</span>

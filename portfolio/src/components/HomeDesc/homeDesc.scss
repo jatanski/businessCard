@@ -1,0 +1,14 @@
+.homeDesc {
+  &__title {
+    margin: 20vh 0 2vh;
+    font-size: 4em;
+  }
+  &__desc {
+    margin: 3vh 0 6vh;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    &__el {
+      margin-top: 1vh;
+    }
+  }
+}

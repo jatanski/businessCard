@@ -4,13 +4,31 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Menu from "../components/Menu/Menu"
 
+import "../styles/pages/contact.scss"
+
 const Contact = () => (
   <>
     <SEO title="Contact & CV" />
-    <h1>Hi people</h1>
-    <p>In this site you have info how you may contact with me.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
+    <div id="pt-main" class="pt-perspective">
+      <div class="pt-page pt-page-1">
+        <h1>
+          <span>A collection of</span>
+          <strong>Page 1</strong> Transitions
+        </h1>
+      </div>
+      <div class="pt-page pt-page-2">
+        <h1>
+          <span>A collection of</span>
+          <strong>Page 2</strong> Transitions
+        </h1>
+      </div>
+      <div class="pt-page pt-page-3">
+        <h1>
+          <span>A collection of</span>
+          <strong>Page 3</strong> Transitions
+        </h1>
+      </div>
+    </div>
     <Menu active="contact"></Menu>
   </>
 )
