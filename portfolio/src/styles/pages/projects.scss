@@ -1,0 +1,13 @@
+.projects {
+  width: 100%;
+  &__info {
+    display: flex;
+    &__menu {
+      margin: 5vh 3vw;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
