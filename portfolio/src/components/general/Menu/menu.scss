@@ -43,3 +43,16 @@
   color: red;
   font-weight: bold;
 }
+
+@media (max-width: 1366px) {
+  .menu {
+    &__title {
+      font-size: 3em;
+    }
+    &__list {
+      &__el {
+        font-size: 1.6em;
+      }
+    }
+  }
+}

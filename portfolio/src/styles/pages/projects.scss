@@ -14,3 +14,15 @@
     transform: translateY(-12%);
   }
 }
+
+@media (max-width: 1680px) {
+  .projects__cards {
+    margin-right: 35vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .projects__menu {
+    transform: translateY(-6%);
+  }
+}

@@ -39,7 +39,7 @@ const Projects = () => {
       image: ImgLC,
       title: "LifeChat",
       text:
-        "App is live chat from proffesional chat center. It's use fot reduction stress and raises morale. App created on 12h heckaton and it had a 3rd place.",
+        "App is live chat from chat center. It's use fot reduction stress and raises morale. App created on 12h heckaton and it had a 3rd place.",
       tech: "react socket.io express mongoDB",
       github: `https://github.com/AngelikaKuleta/LifeChat`,
       demo: `https://lifechat.herokuapp.com`,

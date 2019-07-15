@@ -4,7 +4,7 @@
   padding-bottom: 5vh;
 
   &__title {
-    margin: 18vh 0 2vh;
+    margin: 12vh 0 2vh;
     font-size: 6em;
   }
   &__desc {
@@ -13,6 +13,38 @@
     font-size: 1.8em;
     &__el {
       margin-top: 1vh;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .desc {
+    padding-bottom: 0vh;
+    &__title {
+      margin: 4vh 0 2vh;
+      font-size: 5em;
+    }
+    &__desc {
+      font-size: 1.6em;
+      &__el {
+        margin-top: 0vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .desc {
+    padding-bottom: 0vh;
+    &__title {
+      margin: 3vh 0 1vh;
+      font-size: 4em;
+    }
+    &__desc {
+      font-size: 1.3em;
+      &__el {
+        margin-top: 0vh;
+      }
     }
   }
 }

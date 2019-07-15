@@ -13,3 +13,31 @@
 #desc-projects {
   padding-bottom: 0vh;
 }
+
+@media (max-width: 1600px) {
+  .desc .desc-projects {
+    &__title {
+      margin: 5vh 0 2vh;
+      font-size: 4.2em;
+    }
+    &__desc {
+      margin-top: 0;
+      margin-right: 30vw;
+      font-size: 1.4em;
+    }
+  }
+  #desc-projects {
+    padding-bottom: 1vh;
+  }
+}
+
+@media (max-width: 1366px) {
+  .desc .desc-projects {
+    &__title {
+      font-size: 4em;
+    }
+    &__desc {
+      font-size: 1.2em;
+    }
+  }
+}

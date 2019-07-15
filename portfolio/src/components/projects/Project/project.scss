@@ -1,6 +1,39 @@
 .project {
   height: 50vh;
+  &__card {
+    width: 22rem;
+  }
   &__technology {
     margin-top: 1vh;
+  }
+}
+
+@media (max-width: 1680px) {
+  .project {
+    height: 50vh;
+    &__card {
+      width: 19rem;
+    }
+    &__btn {
+      padding: 15px 25px;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .card-body {
+    padding: 1vh 1vw !important;
+  }
+  .project {
+    height: 58vh;
+    &__card {
+      &__title {
+        font-size: 0.8em !important;
+      }
+      &__text,
+      &__technology {
+        font-size: 0.8em !important;
+      }
+    }
   }
 }

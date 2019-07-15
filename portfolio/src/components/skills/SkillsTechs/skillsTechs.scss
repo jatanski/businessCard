@@ -2,6 +2,7 @@
   color: #eee;
   margin-left: 3vw;
   transform: translateY(-8%);
+  margin-right: 35vw;
   &__wrap {
     padding-bottom: 2vh;
     &__title {
@@ -18,4 +19,23 @@
 .skills-ico-svg {
   transform: translateY(-40%);
   padding: 0 1vh;
+}
+
+@media (max-width: 1600px) {
+  .skills__techs {
+    &__wrap {
+      &__title {
+        font-size: 2.6em;
+        padding-bottom: 1vh;
+      }
+    }
+  }
+
+  .skills-ico-svg {
+    transform: translateY(-30%);
+  }
+  .skills-ico {
+    font-size: 4em;
+    padding: 1vh;
+  }
 }

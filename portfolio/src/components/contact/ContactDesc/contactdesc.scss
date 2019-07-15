@@ -4,8 +4,43 @@
     font-size: 5em;
     margin: 10vh 0 2vh;
   }
+  &__desc {
+    margin-right: 50vw;
+  }
 }
 
 #desc-contact {
   padding-bottom: 3vh;
+}
+
+@media (max-width: 1680px) {
+  .desc .desc-contact {
+    &__title {
+      font-size: 5em;
+      margin: 5vh 0 2vh;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .desc .desc-contact {
+    &__title {
+      font-size: 4.6em;
+    }
+    &__desc {
+      font-size: 1.4em;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .desc .desc-contact {
+    &__title {
+      margin: 2vh 0 2vh;
+      font-size: 4.2em;
+    }
+    &__desc {
+      font-size: 1.2em;
+    }
+  }
 }

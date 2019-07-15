@@ -2,3 +2,10 @@
   margin-left: 4vw;
   padding-bottom: 10vh;
 }
+
+@media (max-width: 1600px) {
+  .contact__media {
+    margin-right: 50%;
+    padding-bottom: 5vh;
+  }
+}

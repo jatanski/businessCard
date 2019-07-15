@@ -1,3 +1,9 @@
 .skills__menu {
   transform: translateY(-10%);
 }
+
+@media (max-width: 1600px) {
+  .skills__menu {
+    transform: translateY(-7%);
+  }
+}

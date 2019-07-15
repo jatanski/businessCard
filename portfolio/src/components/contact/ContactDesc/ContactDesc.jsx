@@ -5,7 +5,7 @@ import "./contactDesc.scss"
 const ContactDesc = () => (
   <div id="desc-contact" className="desc desc-contact">
     <h1 className="desc__title desc-contact__title">Contact & CV</h1>
-    <div className="desc__desc">
+    <div className="desc__desc desc-contact__desc">
       <p className="desc__desc__el">
         If you want contact with me, below you have all my media.
       </p>

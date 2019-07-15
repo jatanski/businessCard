@@ -5,11 +5,22 @@
   }
   &__desc {
     margin-top: 0;
-    margin-right: 40vw;
-    font-size: 1.5em;
+    margin-right: 35vw;
+    font-size: 1.4em;
   }
 }
 
 #desc-skills {
   padding-bottom: 0vh;
+}
+
+@media (max-width: 1366px) {
+  .desc .desc-skills {
+    &__title {
+      font-size: 4em;
+    }
+    &__desc {
+      font-size: 1.2em;
+    }
+  }
 }

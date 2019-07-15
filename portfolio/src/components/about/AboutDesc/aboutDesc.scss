@@ -16,3 +16,36 @@
 #desc-about {
   padding-bottom: 0vh;
 }
+
+@media (max-width: 1600px) {
+  .desc .desc-about {
+    &__title {
+      font-size: 4.6em;
+    }
+    &__desc {
+      margin: 3vh 0;
+      margin-right: 40vw;
+      font-size: 1.3em;
+    }
+  }
+
+  .desc-about .title-2 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1366px) {
+  .desc .desc-about {
+    &__title {
+      margin: 0vh 0 0vh;
+      font-size: 4em;
+    }
+    &__desc {
+      font-size: 1.2em;
+    }
+  }
+
+  .desc-about .title-2 {
+    font-size: 2.6em;
+  }
+}

@@ -19,28 +19,46 @@ export default class Project extends Component {
     return (
       <div className="project">
         <MDBCol>
-          <MDBCard style={{ width: "22rem" }}>
+          <MDBCard className="project__card">
             <MDBCardImage
               className="img-fluid"
               src={this.props.info.image}
               waves
             />
             <MDBCardBody>
-              <MDBCardTitle>{this.props.info.title}</MDBCardTitle>
+              <MDBCardTitle>
+                <div className="project__card__title">
+                  {this.props.info.title}
+                </div>
+              </MDBCardTitle>
               <MDBCardText>
-                <div className="project__text">{this.props.info.text}</div>
-                <div className="project__technology">
+                <div className="project__card__text">
+                  {this.props.info.text}
+                </div>
+                <div className="project__card__technology">
                   {this.props.info.tech}
                 </div>
               </MDBCardText>
-              <MDBBtn color="elegant" href={this.props.info.github}>
+              <MDBBtn
+                className="project__btn"
+                color="elegant"
+                href={this.props.info.github}
+              >
                 <i class="fas fa-code"></i>
               </MDBBtn>
-              <MDBBtn color="elegant" href={this.props.info.demo}>
+              <MDBBtn
+                className="project__btn"
+                color="elegant"
+                href={this.props.info.demo}
+              >
                 <i class="fas fa-desktop"></i>
               </MDBBtn>
               {this.props.info.demo2 ? (
-                <MDBBtn color="elegant" href={this.props.info.demo2}>
+                <MDBBtn
+                  className="project__btn"
+                  color="elegant"
+                  href={this.props.info.demo2}
+                >
                   <i class="fas fa-desktop"></i>
                 </MDBBtn>
               ) : null}
