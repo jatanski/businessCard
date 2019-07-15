@@ -29,6 +29,8 @@ class Menu extends Component {
       case "contact":
         this.setState({ contact: true })
         break
+      default:
+        break
     }
   }
   render() {
@@ -37,7 +39,7 @@ class Menu extends Component {
         <h2 className="menu__title">Menu</h2>
         <ul className="menu__list">
           <li className="menu__list__el">
-            <Link to="/">
+            <Link to="/home">
               {this.state.home ? (
                 <span className="active">Home</span>
               ) : (

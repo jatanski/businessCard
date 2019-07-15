@@ -1,0 +1,18 @@
+.home {
+  position: relative;
+  &__main {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.firstLoad {
+  opacity: 0;
+  animation: ShowHome 0.1s 0.4s both;
+}
+
+@keyframes ShowHome {
+  100% {
+    opacity: 1;
+  }
+}
