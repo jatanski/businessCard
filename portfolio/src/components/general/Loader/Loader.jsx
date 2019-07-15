@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./homeLoader.scss"
+import "./loader.scss"
 
 const HomeLoader = () => (
   <>

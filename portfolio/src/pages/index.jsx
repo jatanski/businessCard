@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { MDBBtn } from "mdbreact"
 
 import SEO from "../components/seo"
-import HomeLoader from "../components/home/HomeLoader/HomeLoader"
+import Loader from "../components/general/Loader/Loader"
 
 import "../styles/global.scss"
 import "../styles/pages/index.scss"
@@ -13,7 +13,7 @@ const IndexPage = () => {
     <>
       <SEO title="Welcome" />
       <section className="loader">
-        <HomeLoader></HomeLoader>
+        <Loader></Loader>
         <div className="loader__startBtn">
           <Link to="/home">
             <MDBBtn size="lg" outline color="elegant">

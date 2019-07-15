@@ -1,8 +1,8 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import Menu from "../components/Menu/Menu"
-import SkillsDesc from "../components/SkillsDesc/SkillsDesc"
+import Menu from "../components/general/Menu/Menu"
+import SkillsDesc from "../components/skills/SkillsDesc/SkillsDesc"
 import {
   GatsbySVG,
   GraphQLSVG,

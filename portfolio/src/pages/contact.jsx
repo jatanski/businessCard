@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import SEO from "../components/seo"
-import Menu from "../components/Menu/Menu"
+import Menu from "../components/general/Menu/Menu"
 import ContactDesc from "../components/contact/ContactDesc/ContactDesc"
 import ContactMedia from "../components/contact/ContactMedia/CoctactMedia"
 

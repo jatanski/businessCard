@@ -1,9 +1,9 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import Menu from "../components/Menu/Menu"
-import ProjectsDesc from "../components/ProjectsDesc/ProjectsDesc"
-import Project from "../components/Project/Project"
+import Menu from "../components/general/Menu/Menu"
+import ProjectsDesc from "../components/projects/ProjectsDesc/ProjectsDesc"
+import Project from "../components/projects/Project/Project"
 
 import ImgOwl from "../images/owl-min.png"
 import ImgMos from "../images/mos-min.jpg"
