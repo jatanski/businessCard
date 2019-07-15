@@ -3,15 +3,14 @@ import React from "react"
 import "./skillsDesc.scss"
 
 const SkillsDesc = () => (
-  <div className="desc desc-projects">
-    <h1 className="desc__title">My skills</h1>
-    <div className="desc__desc">
-      <p className="desc__desc__el">Below you can watch my technology stack.</p>
+  <div id="desc-skills" className="desc desc-skills">
+    <h1 className="desc__title desc-skills__title">My skills</h1>
+    <div className="desc__desc desc-skills__desc">
       <p className="desc__desc__el">
-        I trained all of then in practical project, <br /> which you can watch
-        in section projects.
+        Below you can watch my technology stack. I trained all of then in
+        practical project, which you can watch in section projects. All time I
+        learn and try new technology.
       </p>
-      <p className="desc__desc__el">All time I learn and try technology.</p>
     </div>
   </div>
 )
