@@ -11,12 +11,12 @@ import "../styles/pages/index.scss"
 const IndexPage = () => {
   return (
     <>
-      <SEO title="index" />
+      <SEO title="Welcome" />
       <section className="loader">
         <HomeLoader></HomeLoader>
         <div className="loader__startBtn">
           <Link to="/home">
-            <MDBBtn outline color="elegant">
+            <MDBBtn size="lg" outline color="elegant">
               Let's start!
             </MDBBtn>
           </Link>

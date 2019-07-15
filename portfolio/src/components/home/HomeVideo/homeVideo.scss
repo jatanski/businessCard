@@ -1,0 +1,21 @@
+.home__bg {
+  &__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
+  &__opacity {
+    position: fixed;
+    min-width: 40%;
+    min-height: 100%;
+    bottom: 0;
+    left: -20%;
+    right: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    transform: skew(-15deg);
+    z-index: -1;
+  }
+}

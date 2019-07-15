@@ -1,20 +1,25 @@
+@import "../../styles/variables";
+
 .menu {
+  margin-left: 3vw;
   &__title {
-    font-size: 2.2em;
+    font-size: 3.6em;
+    color: $menu-color;
   }
   &__list {
     &__el {
       position: relative;
-      margin-top: 5px;
-      font-size: 1.6em;
+      font-size: 1.8em;
+      padding: 2px 5vw 2px 0;
       & a {
+        padding: 3px 5vw 3px 0;
         margin-left: 1vw;
         transition: 0.4s;
-        color: #000;
+        color: $menu-color;
         &::after {
           content: "";
           position: absolute;
-          left: -70px;
+          left: -8vw;
           height: 100%;
           width: 10px;
           background-color: red;
@@ -22,11 +27,11 @@
           transition: 0.4s;
         }
         &:hover {
-          color: #000;
+          color: $menu-color;
           margin-left: 4vw;
           letter-spacing: 10px;
           &::after {
-            left: 0;
+            left: 1vw;
           }
         }
       }
