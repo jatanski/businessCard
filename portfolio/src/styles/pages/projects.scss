@@ -1,13 +1,16 @@
 .projects {
   width: 100%;
   &__info {
-    display: flex;
     &__menu {
       margin: 5vh 3vw;
     }
   }
   &__cards {
+    margin-right: 30vw;
     display: flex;
     flex-wrap: wrap;
+  }
+  &__menu {
+    transform: translateY(-12%);
   }
 }

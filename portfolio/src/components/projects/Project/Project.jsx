@@ -33,14 +33,14 @@ export default class Project extends Component {
                   {this.props.info.tech}
                 </div>
               </MDBCardText>
-              <MDBBtn href={this.props.info.github}>
+              <MDBBtn color="elegant" href={this.props.info.github}>
                 <i class="fas fa-code"></i>
               </MDBBtn>
-              <MDBBtn href={this.props.info.demo}>
+              <MDBBtn color="elegant" href={this.props.info.demo}>
                 <i class="fas fa-desktop"></i>
               </MDBBtn>
               {this.props.info.demo2 ? (
-                <MDBBtn href={this.props.info.demo2}>
+                <MDBBtn color="elegant" href={this.props.info.demo2}>
                   <i class="fas fa-desktop"></i>
                 </MDBBtn>
               ) : null}

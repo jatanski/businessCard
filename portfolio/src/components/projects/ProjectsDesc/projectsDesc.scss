@@ -1,5 +1,15 @@
-.desc-projects {
-  position: relative;
-  top: -15vh;
-  text-align: right;
+.desc .desc-projects {
+  &__title {
+    margin: 5vh 0 2vh;
+    font-size: 4.8em;
+  }
+  &__desc {
+    margin-top: 0;
+    margin-right: 30vw;
+    font-size: 1.5em;
+  }
+}
+
+#desc-projects {
+  padding-bottom: 0vh;
 }

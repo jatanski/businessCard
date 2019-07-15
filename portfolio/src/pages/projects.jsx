@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Menu from "../components/general/Menu/Menu"
 import ProjectsDesc from "../components/projects/ProjectsDesc/ProjectsDesc"
 import Project from "../components/projects/Project/Project"
+import BgVideo from "../components/general/BgVideo/BgVideo"
 
 import ImgOwl from "../images/owl-min.png"
 import ImgMos from "../images/mos-min.jpg"
@@ -21,7 +22,7 @@ const Projects = () => {
       title: "OWL Learning portal",
       text:
         "Professional learning portal. Alternative to Process.st. App created at the end of CodersCamp.",
-      tech: "react express mongoDB",
+      tech: "react, express, mongoDB",
       github: `https://github.com/TuneLord/OWL_LearningPortal`,
       demo: `https://owl-learning-portal.herokuapp.com`,
     },
@@ -74,9 +75,6 @@ const Projects = () => {
       <SEO title="Projects" />
       <section className="projects">
         <div className="projects__info">
-          <div className="projects__menu">
-            <Menu active="projects"></Menu>
-          </div>
           <ProjectsDesc></ProjectsDesc>
         </div>
         <div className="projects__cards">
@@ -84,6 +82,10 @@ const Projects = () => {
             return <Project info={project}></Project>
           })}
         </div>
+        <div className="projects__menu">
+          <Menu active="projects"></Menu>
+        </div>
+        <BgVideo right="30%"></BgVideo>
       </section>
     </>
   )
