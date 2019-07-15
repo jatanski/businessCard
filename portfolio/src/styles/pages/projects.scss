@@ -26,3 +26,11 @@
     transform: translateY(-6%);
   }
 }
+
+@media (max-width: 1024px) {
+  .projects {
+    &__cards {
+      margin-right: 0vw;
+    }
+  }
+}

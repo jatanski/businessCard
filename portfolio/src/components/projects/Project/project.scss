@@ -37,3 +37,39 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .project {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .project {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 52vh;
+    &__card {
+      width: 22rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .project {
+    height: 54vh;
+    &__card {
+      width: 21rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .project {
+    height: 62vh;
+    &__card {
+      width: 18rem;
+    }
+  }
+}

@@ -17,7 +17,8 @@ const Skills = () => (
       <div className="skills__menu">
         <Menu active="skills"></Menu>
       </div>
-      <BgVideo right="35%"></BgVideo>
+      <BgVideo desktop right="35%"></BgVideo>
+      <BgVideo mobile right="15%"></BgVideo>
     </section>
   </>
 )

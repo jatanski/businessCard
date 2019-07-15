@@ -24,3 +24,40 @@
     }
   }
 }
+
+@media (max-width: 420px) {
+  .desc .desc-skills {
+    &__title {
+      font-size: 3.2em;
+    }
+    &__desc {
+      font-size: 1em;
+      padding-bottom: 2vh;
+      margin-right: 25vw;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .desc .desc-skills {
+    &__title {
+      font-size: 3em;
+    }
+    &__desc {
+      font-size: 1em;
+      padding-bottom: 1vh;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .desc .desc-skills {
+    &__title {
+      font-size: 3em;
+    }
+    &__desc {
+      font-size: 0.9em;
+      padding-bottom: 1vh;
+    }
+  }
+}

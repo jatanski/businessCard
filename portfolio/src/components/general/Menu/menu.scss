@@ -56,3 +56,34 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .menu {
+    &__title {
+      font-size: 2.6em;
+    }
+    &__list {
+      &__el {
+        font-size: 1.4em;
+        & a {
+          &::after {
+            left: -10vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .menu {
+    &__title {
+      font-size: 2.4em;
+    }
+    &__list {
+      &__el {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

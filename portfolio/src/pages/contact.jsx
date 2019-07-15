@@ -12,10 +12,13 @@ const Contact = () => (
   <>
     <SEO title="Contact & CV" />
     <section className="contact">
-      <ContactDesc></ContactDesc>
-      <ContactMedia></ContactMedia>
-      <Menu active="contact"></Menu>
-      <BgVideo right="50%"></BgVideo>
+      <div className="mobile">
+        <ContactDesc></ContactDesc>
+        <ContactMedia></ContactMedia>
+        <Menu active="contact"></Menu>
+        <BgVideo desktop right="50%"></BgVideo>
+        <BgVideo mobile right="10%"></BgVideo>
+      </div>
     </section>
   </>
 )

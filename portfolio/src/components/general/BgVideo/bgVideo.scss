@@ -19,3 +19,27 @@
     z-index: -1;
   }
 }
+
+.bg-mobile {
+  display: none;
+}
+
+.bg-desktop {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .bg-mobile {
+    display: block;
+  }
+
+  .bg-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .bg__opacity {
+    left: -30%;
+  }
+}

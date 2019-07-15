@@ -12,9 +12,12 @@ const AboutMe = () => (
   <>
     <SEO title="About me" />
     <section className="aboutMe">
-      <AboutDesc></AboutDesc>
-      <BgVideo right="40%"></BgVideo>
-      <Menu active="aboutMe"></Menu>
+      <div className="mobile">
+        <AboutDesc></AboutDesc>
+        <BgVideo desktop right="40%"></BgVideo>
+        <BgVideo mobile right="20%"></BgVideo>
+        <Menu active="aboutMe"></Menu>
+      </div>
     </section>
   </>
 )

@@ -11,3 +11,15 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
+
+@media (max-width: 1024px) {
+  .mobile {
+    padding-top: 7vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .mobile {
+    padding-top: 3vh;
+  }
+}

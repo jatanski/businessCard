@@ -85,7 +85,8 @@ const Projects = () => {
         <div className="projects__menu">
           <Menu active="projects"></Menu>
         </div>
-        <BgVideo right="30%"></BgVideo>
+        <BgVideo desktop right="30%"></BgVideo>
+        <BgVideo mobile right="-10%"></BgVideo>
       </section>
     </>
   )

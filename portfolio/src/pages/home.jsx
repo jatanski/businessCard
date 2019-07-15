@@ -12,10 +12,13 @@ const Home = () => (
   <>
     <SEO title="Home" />
     <section className="home">
-      <div className="home__main">
-        <HomeDesc></HomeDesc>
-        <BgVideo></BgVideo>
-        <Menu active="home"></Menu>
+      <div className="mobile">
+        <div className="home__main">
+          <HomeDesc></HomeDesc>
+          <BgVideo desktop right="50%"></BgVideo>
+          <BgVideo mobile right="20%"></BgVideo>
+          <Menu active="home"></Menu>
+        </div>
       </div>
     </section>
   </>
