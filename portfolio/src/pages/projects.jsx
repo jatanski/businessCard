@@ -1,16 +1,21 @@
 import React from "react"
 
+//import MD Bootstrap files
+import "@fortawesome/fontawesome-free/css/all.min.css"
+import "bootstrap-css-only/css/bootstrap.min.css"
+import "mdbreact/dist/css/mdb.css"
+
 import SEO from "../components/seo"
 import Menu from "../components/general/Menu/Menu"
 import ProjectsDesc from "../components/projects/ProjectsDesc/ProjectsDesc"
-import Project from "../components/projects/Project/Project"
+import ProjectNew from "../components/projects/ProjectNew/ProjectNew"
 import BgVideo from "../components/general/BgVideo/BgVideo"
 
 import ImgOwl from "../images/owl-min.png"
 import ImgMos from "../images/mos-min.jpg"
 import ImgLC from "../images/lifechat-mini.jpg"
 import ImgCLP from "../images/clp-mini.jpg"
-import ImgNewPort from "../images/portfolio-mini.jpg"
+import ImgNewPort from "../images/newportfolio-mini.jpg"
 import ImgOldPort from "../images/oldportfolio-mini.jpg"
 
 import "../styles/pages/projects.scss"
@@ -18,7 +23,7 @@ import "../styles/pages/projects.scss"
 const Projects = () => {
   const projects = [
     {
-      image: ImgOwl,
+      image: { alt: "Image of Owl Learing Portal", src: ImgOwl },
       title: "OWL Learning portal",
       text:
         "Professional learning portal. Alternative to Process.st. App created at the end of CodersCamp.",
@@ -27,7 +32,7 @@ const Projects = () => {
       demo: `https://owl-learning-portal.herokuapp.com`,
     },
     {
-      image: ImgMos,
+      image: { alt: "Image of Master of Sport", src: ImgMos },
       title: "Master of Sport",
       text:
         "Training and diet diary for people who take care of their health. From proffesionals and beginners.",
@@ -36,7 +41,7 @@ const Projects = () => {
       demo: `https://master-sportman.herokuapp.com`,
     },
     {
-      image: ImgLC,
+      image: { alt: "Image of LifeChat", src: ImgLC },
       title: "LifeChat",
       text:
         "App is live chat from chat center. It's use fot reduction stress and raises morale. App created on 12h heckaton and it had a 3rd place.",
@@ -46,7 +51,7 @@ const Projects = () => {
       demo2: `https://jatanski.github.io/lifechat-client/`,
     },
     {
-      image: ImgCLP,
+      image: { alt: "Image of Construction Landing Page", src: ImgCLP },
       title: "Construction LP",
       text: "Static landing page from my startup.",
       tech: "html sass js",
@@ -54,7 +59,7 @@ const Projects = () => {
       demo: `https://jatanski.github.io/construction-business-landingpage/`,
     },
     {
-      image: ImgNewPort,
+      image: { alt: "Image of New Portfolio", src: ImgNewPort },
       title: "Portfolio Page",
       text: "My portfolio page.",
       tech: "react gatsby sass",
@@ -62,7 +67,7 @@ const Projects = () => {
       demo: `https://jatanski.github.io/construction-business-landingpage/`,
     },
     {
-      image: ImgOldPort,
+      image: { alt: "Image of Old Portfolio", src: ImgOldPort },
       title: "Old Business Page",
       text: "My old business page. Page created on CodersCamp.",
       tech: "html css js jquery",
@@ -79,14 +84,14 @@ const Projects = () => {
         </div>
         <div className="projects__cards">
           {projects.map(project => {
-            return <Project info={project}></Project>
+            return <ProjectNew info={project}></ProjectNew>
           })}
         </div>
         <div className="projects__menu">
           <Menu active="projects"></Menu>
         </div>
         <BgVideo desktop right="30%"></BgVideo>
-        <BgVideo mobile right="-10%"></BgVideo>
+        <BgVideo mobile right="-20%"></BgVideo>
       </section>
     </>
   )

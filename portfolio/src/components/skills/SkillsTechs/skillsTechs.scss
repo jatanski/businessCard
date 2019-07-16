@@ -1,5 +1,7 @@
+@import "../../../styles/variables";
+
 .skills__techs {
-  color: #eee;
+  color: $main-color;
   margin-left: 3vw;
   transform: translateY(-8%);
   margin-right: 35vw;

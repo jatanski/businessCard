@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .index__loader {
   height: 100vh;
 }
@@ -41,7 +43,7 @@
 
 .loader h2 > span > span > span {
   display: inline-block;
-  color: hsla(0, 0%, 100%, 0);
+  color: $loader-color;
   transform-style: preserve-3d;
   transform: translate3d(0, 0, 0);
   animation: OpeningSequence 4.2s linear forwards;
@@ -53,24 +55,24 @@
 
 @keyframes OpeningSequence {
   0% {
-    text-shadow: 0 0 50px #000;
+    text-shadow: 0 0 50px $loader-color;
     letter-spacing: 80px;
     opacity: 0.2;
     transform: rotateY(-90deg);
   }
   50% {
-    text-shadow: 0 0 1px #000;
+    text-shadow: 0 0 1px $loader-color;
     letter-spacing: 14px;
     opacity: 0.8;
     transform: rotateY(0deg);
   }
   85% {
-    text-shadow: 0 0 1px #000;
+    text-shadow: 0 0 1px $loader-color;
     opacity: 0.8;
     transform: rotateY(0deg) translateZ(100px);
   }
   100% {
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 10px $loader-color;
     opacity: 0;
     transform: translateZ(130px);
     pointer-events: none;
