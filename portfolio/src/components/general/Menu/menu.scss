@@ -11,11 +11,13 @@
       position: relative;
       font-size: 1.8em;
       padding: 2px 5vw 2px 0;
-      & a {
+      & .span-navigate,
+      a {
         padding: 3px 5vw 3px 0;
         margin-left: 1vw;
         transition: 0.4s;
         color: $menu-color;
+        cursor: pointer;
         &::after {
           content: "";
           position: absolute;

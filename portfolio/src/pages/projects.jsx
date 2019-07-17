@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 
 //import MD Bootstrap files
 import "@fortawesome/fontawesome-free/css/all.min.css"
@@ -20,8 +20,13 @@ import ImgOldPort from "../images/oldportfolio-mini.jpg"
 
 import "../styles/pages/projects.scss"
 
-const Projects = () => {
-  const projects = [
+class Projects extends Component {
+  state = {
+    className: "projects",
+    bgClassName: "sectionBg",
+  }
+
+  projects = [
     {
       image: { alt: "Image of Owl Learing Portal", src: ImgOwl },
       title: "OWL Learning portal",
@@ -75,26 +80,40 @@ const Projects = () => {
       demo: `https://jatanski.github.io/Portfolio/`,
     },
   ]
-  return (
-    <>
-      <SEO title="Projects" />
-      <section className="projects">
-        <div className="projects__info">
-          <ProjectsDesc></ProjectsDesc>
+
+  animation = () => {
+    this.setState({
+      className: "projects goOut",
+      bgClassName: "sectionBg bgOut",
+    })
+  }
+
+  render() {
+    return (
+      <>
+        <SEO title="Projects" />
+        <div className={this.state.bgClassName}>
+          <section className={this.state.className}>
+            <div className="projects__info">
+              <ProjectsDesc></ProjectsDesc>
+            </div>
+            <div className="projects__cards">
+              {this.projects.map(project => {
+                return (
+                  <ProjectNew key={project.title} info={project}></ProjectNew>
+                )
+              })}
+            </div>
+            <div className="projects__menu">
+              <Menu animation={this.animation} active="projects"></Menu>
+            </div>
+            <BgVideo desktop right="30%"></BgVideo>
+            <BgVideo mobile right="-20%"></BgVideo>
+          </section>
         </div>
-        <div className="projects__cards">
-          {projects.map(project => {
-            return <ProjectNew info={project}></ProjectNew>
-          })}
-        </div>
-        <div className="projects__menu">
-          <Menu active="projects"></Menu>
-        </div>
-        <BgVideo desktop right="30%"></BgVideo>
-        <BgVideo mobile right="-20%"></BgVideo>
-      </section>
-    </>
-  )
+      </>
+    )
+  }
 }
 
 export default Projects

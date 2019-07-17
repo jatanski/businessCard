@@ -1,10 +1,12 @@
 .home {
-  position: relative;
-  &__main {
-    position: absolute;
-    top: 0;
-    // right: 0;
-  }
+  overflow: hidden;
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 50%;
+  left: -100%;
+  transform: translate(-50%, -50%) scale(0.8);
+  animation: AnimationIn 1.2s both;
 }
 
 .firstLoad {
@@ -12,8 +14,48 @@
   animation: ShowHome 0.1s 0.4s both;
 }
 
+.bgOut {
+  overflow: hidden;
+}
+
+.goOut {
+  animation: AnimationOut 1.2s both;
+}
+
+@keyframes AnimationOut {
+  0% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    left: 200%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
 @keyframes ShowHome {
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes AnimationIn {
+  0% {
+    left: -100%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  66% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }

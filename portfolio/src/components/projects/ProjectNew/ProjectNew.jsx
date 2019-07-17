@@ -3,7 +3,6 @@ import { MDBBtn } from "mdbreact"
 import "./projectNew.scss"
 
 const ProjectBig = props => {
-  console.log(props)
   return (
     <>
       <section className="projectNew">

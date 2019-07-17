@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 
 import SEO from "../components/seo"
 import HomeDesc from "../components/home/HomeDesc/HomeDesc"
@@ -8,20 +8,33 @@ import Menu from "../components/general/Menu/Menu"
 import "../styles/global.scss"
 import "../styles/pages/home.scss"
 
-const Home = () => (
-  <>
-    <SEO title="Home" />
-    <section className="home">
-      <div className="mobile">
-        <div className="home__main">
-          <HomeDesc></HomeDesc>
-          <BgVideo desktop right="50%"></BgVideo>
-          <BgVideo mobile right="20%"></BgVideo>
-          <Menu active="home"></Menu>
+class Home extends Component {
+  state = {
+    className: "home",
+    bgClassName: "sectionBg",
+  }
+
+  animation = () => {
+    this.setState({ className: "home goOut", bgClassName: "sectionBg bgOut" })
+  }
+
+  render() {
+    return (
+      <>
+        <SEO title="Home" />
+        <div className={this.state.bgClassName}>
+          <section className={this.state.className}>
+            <div className="mobile">
+              <HomeDesc></HomeDesc>
+              <BgVideo desktop right="50%"></BgVideo>
+              <BgVideo mobile right="20%"></BgVideo>
+              <Menu animation={this.animation} active="home"></Menu>
+            </div>
+          </section>
         </div>
-      </div>
-    </section>
-  </>
-)
+      </>
+    )
+  }
+}
 
 export default Home

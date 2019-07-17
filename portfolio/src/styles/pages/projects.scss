@@ -1,5 +1,12 @@
 .projects {
-  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  min-width: 99.1vw;
+  min-height: 100vh;
+  top: 90%;
+  left: -100%;
+  transform: translate(-50%, -50%) scale(0.8);
+  animation: AnimationIn 1.2s both;
   &__info {
     &__menu {
       margin: 5vh 3vw;
@@ -14,6 +21,14 @@
   &__menu {
     transform: translateY(-12%);
   }
+}
+
+.bgOut {
+  overflow: hidden;
+}
+
+.goOut {
+  animation: AnimationOut 1.2s both;
 }
 
 @media (max-width: 1680px) {
@@ -33,5 +48,37 @@
     &__cards {
       margin-right: 0vw;
     }
+  }
+}
+
+@keyframes AnimationIn {
+  0% {
+    left: -100%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  66% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes AnimationOut {
+  0% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    left: 200%;
+    transform: translate(-50%, -50%) scale(0.8);
   }
 }
