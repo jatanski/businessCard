@@ -1,0 +1,13 @@
+.projectsTechs {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5em;
+  padding: 0 3vw 1vh;
+}
+
+@media (max-width: 420px) {
+  .projectsTechs {
+    font-size: 3.5em;
+    padding: 0 10vw 1vh;
+  }
+}

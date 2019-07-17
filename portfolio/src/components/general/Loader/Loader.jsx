@@ -2,99 +2,98 @@ import React from "react"
 
 import "./loader.scss"
 
-const HomeLoader = () => (
+const DesktopLoader = () => (
   <>
     <div className="index__loader">
-      <div class="loader">
-        <h2>
-          <span class="word1">
-            <span class="char1">
-              <span class="char1">W</span>
+      <div className="loader loader-desktop">
+        <h2 className="loader__text">
+          <span className="loader__text__word word1">
+            <span className="char1">
+              <span className="char1">W</span>
             </span>
-            <span class="char2">
-              <span class="char1">e</span>
+            <span className="char2">
+              <span className="char1">e</span>
             </span>
-            <span class="char3">
-              <span class="char1">l</span>
+            <span className="char3">
+              <span className="char1">l</span>
             </span>
-            <span class="char4">
-              <span class="char1">c</span>
+            <span className="char4">
+              <span className="char1">c</span>
             </span>
-            <span class="char5">
-              <span class="char1">o</span>
+            <span className="char5">
+              <span className="char1">o</span>
             </span>
-            <span class="char6">
-              <span class="char1">m</span>
+            <span className="char6">
+              <span className="char1">m</span>
             </span>
-            <span class="char7">
-              <span class="char1">e</span>
-            </span>
-          </span>
-          <span class="word2">
-            <span class="char1">
-              <span class="char1">t</span>
-            </span>
-            <span class="char2">
-              <span class="char1">o</span>
+            <span className="char7">
+              <span className="char1">e</span>
             </span>
           </span>
-          <span class="word3">
-            <span class="char1">
-              <span class="char1">m</span>
+          <span className="loader__text__word word2">
+            <span className="char1">
+              <span className="char1">t</span>
             </span>
-            <span class="char2">
-              <span class="char1">y</span>
+            <span className="char2">
+              <span className="char1">o</span>
             </span>
           </span>
-          <span class="word4">
-            <span class="char1">
-              <span class="char1">w</span>
+          <span className="loader__text__word word3">
+            <span className="char1">
+              <span className="char1">m</span>
             </span>
-            <span class="char2">
-              <span class="char1">o</span>
+            <span className="char2">
+              <span className="char1">y</span>
             </span>
-            <span class="char3">
-              <span class="char1">r</span>
+          </span>
+          <span className="loader__text__word word4">
+            <span className="char1">
+              <span className="char1">w</span>
             </span>
-            <span class="char4">
-              <span class="char1">l</span>
+            <span className="char2">
+              <span className="char1">o</span>
             </span>
-            <span class="char5">
-              <span class="char1">d</span>
+            <span className="char3">
+              <span className="char1">r</span>
             </span>
-            <span class="char5">
-              <span class="char1">.</span>
+            <span className="char4">
+              <span className="char1">l</span>
+            </span>
+            <span className="char5">
+              <span className="char1">d</span>
+            </span>
+            <span className="char5">
+              <span className="char1">.</span>
             </span>
           </span>
         </h2>
-        <h2>
-          <span class="word1">
-            <span class="char1">
-              <span class="char1">H</span>
+        <h2 className="loader__text">
+          <span className="word1">
+            <span className="char1">
+              <span className="char1">H</span>
             </span>
-            <span class="char2">
-              <span class="char1">a</span>
+            <span className="char2">
+              <span className="char1">a</span>
             </span>
-            <span class="char3">
-              <span class="char1">v</span>
+            <span className="char3">
+              <span className="char1">v</span>
             </span>
-            <span class="char4">
-              <span class="char1">e</span>
+            <span className="char4">
+              <span className="char1">e</span>
             </span>
           </span>
-
-          <span class="word2">
-            <span class="char1">
-              <span class="char1">f</span>
+          <span className="word2">
+            <span className="char1">
+              <span className="char1">f</span>
             </span>
-            <span class="char2">
-              <span class="char1">u</span>
+            <span className="char2">
+              <span className="char1">u</span>
             </span>
-            <span class="char3">
-              <span class="char1">n</span>
+            <span className="char3">
+              <span className="char1">n</span>
             </span>
-            <span class="char4">
-              <span class="char1">!</span>
+            <span className="char4">
+              <span className="char1">!</span>
             </span>
           </span>
         </h2>
@@ -103,4 +102,82 @@ const HomeLoader = () => (
   </>
 )
 
-export default HomeLoader
+const MobileLoader = () => (
+  <>
+    <div className="index__loader">
+      <div className="loader loader-mobile">
+        <h2 className="loader__text">
+          <span className="loader__text__word word1">
+            <span className="char1">
+              <span className="char1">H</span>
+            </span>
+            <span className="char2">
+              <span className="char1">e</span>
+            </span>
+            <span className="char3">
+              <span className="char1">l</span>
+            </span>
+            <span className="char4">
+              <span className="char1">l</span>
+            </span>
+            <span className="char5">
+              <span className="char1">o</span>
+            </span>
+          </span>
+          <span className="loader__text__word word2">
+            <span className="char1">
+              <span className="char1">f</span>
+            </span>
+            <span className="char2">
+              <span className="char1">r</span>
+            </span>
+            <span className="char2">
+              <span className="char1">i</span>
+            </span>
+            <span className="char3">
+              <span className="char1">e</span>
+            </span>
+            <span className="char4">
+              <span className="char1">n</span>
+            </span>
+            <span className="char5">
+              <span className="char1">d</span>
+            </span>
+          </span>
+        </h2>
+        <h2 className="loader__text">
+          <span className="word1">
+            <span className="char1">
+              <span className="char1">H</span>
+            </span>
+            <span className="char2">
+              <span className="char1">a</span>
+            </span>
+            <span className="char3">
+              <span className="char1">v</span>
+            </span>
+            <span className="char4">
+              <span className="char1">e</span>
+            </span>
+          </span>
+          <span className="word2">
+            <span className="char1">
+              <span className="char1">f</span>
+            </span>
+            <span className="char2">
+              <span className="char1">u</span>
+            </span>
+            <span className="char3">
+              <span className="char1">n</span>
+            </span>
+            <span className="char4">
+              <span className="char1">!</span>
+            </span>
+          </span>
+        </h2>
+      </div>
+    </div>
+  </>
+)
+
+export { DesktopLoader, MobileLoader }

@@ -144,8 +144,12 @@
   }
   .projectNew__box:hover .content {
     &__title {
-      margin-top: 1vh;
+      margin-top: 0vh;
     }
+  }
+
+  .projectNew__box:hover .projectNew__box__content {
+    padding-top: 10px;
   }
 }
 
@@ -158,6 +162,10 @@
       font-size: 0.65em;
     }
   }
+
+  .projectNew__box:hover .projectNew__box__content {
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -169,9 +177,7 @@
       font-size: 0.55em;
     }
   }
-  .projectNew__box:hover .content {
-    &__title {
-      margin-top: 0vh;
-    }
+  .projectNew__box:hover .projectNew__box__content {
+    padding-top: 1px;
   }
 }
