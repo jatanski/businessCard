@@ -23,6 +23,14 @@
   }
 }
 
+.bgOut {
+  overflow: hidden;
+}
+
+.goOut {
+  animation: AnimationOut 1.2s both;
+}
+
 @keyframes AnimationIn {
   0% {
     left: -100%;

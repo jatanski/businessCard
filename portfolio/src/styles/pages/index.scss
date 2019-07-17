@@ -1,11 +1,19 @@
 .loader {
+  overflow: hidden;
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #fff;
   &__startBtn {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    animation: showBtn 1.2s 7.4s both;
+    animation: showBtn 1.2s 7s both;
   }
 }
 
