@@ -80,49 +80,59 @@ class Menu extends Component {
         <h2 className="menu__title">Menu</h2>
         <ul className="menu__list">
           <li className="menu__list__el">
-            <span className="span-navigate" onClick={this.goToHome}>
-              {this.state.home ? (
+            {this.state.home ? (
+              <span className="span-navigate active">
                 <span className="active">Home</span>
-              ) : (
-                <span>Home</span>
-              )}
-            </span>
+              </span>
+            ) : (
+              <span className="span-navigate" onClick={this.goToHome}>
+                <span className="noActive">Home</span>
+              </span>
+            )}
           </li>
           <li className="menu__list__el">
-            <span className="span-navigate" onClick={this.goToAbout}>
-              {this.state.aboutMe ? (
+            {this.state.aboutMe ? (
+              <span className="span-navigate active">
                 <span className="active">About me</span>
-              ) : (
-                <span>About me</span>
-              )}
-            </span>
+              </span>
+            ) : (
+              <span className="span-navigate" onClick={this.goToAbout}>
+                <span className="noActive">About me</span>
+              </span>
+            )}
           </li>
           <li className="menu__list__el">
-            <span className="span-navigate" onClick={this.goToSkills}>
-              {this.state.skills ? (
+            {this.state.skills ? (
+              <span className="span-navigate active">
                 <span className="active">Skills</span>
-              ) : (
-                <span>Skills</span>
-              )}
-            </span>
+              </span>
+            ) : (
+              <span className="span-navigate" onClick={this.goToSkills}>
+                <span className="noActive">Skills</span>
+              </span>
+            )}
           </li>
           <li className="menu__list__el">
-            <span className="span-navigate" onClick={this.goToProjects}>
-              {this.state.projects ? (
+            {this.state.projects ? (
+              <span className="span-navigate active">
                 <span className="active">Projects</span>
-              ) : (
-                <span>Projects</span>
-              )}
-            </span>
+              </span>
+            ) : (
+              <span className="span-navigate" onClick={this.goToProjects}>
+                <span className="noActive">Projects</span>
+              </span>
+            )}
           </li>
           <li className="menu__list__el">
-            <span className="span-navigate" onClick={this.goToContact}>
-              {this.state.contact ? (
+            {this.state.contact ? (
+              <span className="span-navigate active">
                 <span className="active">Contact & CV</span>
-              ) : (
-                <span>Contact & CV</span>
-              )}
-            </span>
+              </span>
+            ) : (
+              <span className="span-navigate" onClick={this.goToContact}>
+                <span className="noActive">Contact & CV</span>
+              </span>
+            )}
           </li>
         </ul>
       </nav>

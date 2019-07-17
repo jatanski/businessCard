@@ -9,14 +9,6 @@
   animation: AnimationIn 1.2s both;
 }
 
-.bgOut {
-  overflow: hidden;
-}
-
-.goOut {
-  animation: AnimationOut 1.2s both;
-}
-
 @keyframes AnimationOut {
   0% {
     left: 50%;
@@ -53,8 +45,59 @@
   transform: translateY(-14%);
 }
 
+@media (max-width: 1680px) {
+  .skills {
+    min-width: 99vw;
+  }
+}
+
 @media (max-width: 1600px) {
+  .skills {
+    min-width: 98.9vw;
+  }
   .skills__menu {
     transform: translateY(-7%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .skills {
+    min-width: 98.8vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .skills {
+    min-width: 98.7vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    min-width: 100vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .skills {
+    top: 70%;
+  }
+}
+
+@media (max-width: 375px) {
+  .skills {
+    top: 72.5%;
+  }
+}
+
+@media (max-width: 360px) {
+  .skills {
+    top: 75%;
+  }
+}
+
+@media (max-width: 320px) {
+  .skills {
+    top: 80%;
   }
 }

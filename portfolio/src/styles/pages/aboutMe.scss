@@ -40,3 +40,57 @@
     transform: translate(-50%, -50%) scale(0.8);
   }
 }
+
+@media (max-width: 1680px) {
+  .aboutMe {
+    min-width: 99vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .aboutMe {
+    min-width: 98.9vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .aboutMe {
+    min-width: 98.8vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .aboutMe {
+    min-width: 98.7vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutMe {
+    min-width: 100vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .aboutMe {
+    top: 56.5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutMe {
+    top: 53%;
+  }
+}
+
+@media (max-width: 360px) {
+  .aboutMe {
+    top: 52.5%;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutMe {
+    top: 61.5%;
+  }
+}

@@ -9,11 +9,11 @@
   }
   &__opacity {
     position: fixed;
-    min-width: 40%;
-    min-height: 100%;
     bottom: 0;
     left: -20%;
     right: 60%;
+    min-width: 40%;
+    min-height: 100%;
     background: rgba(0, 0, 0, 0.5);
     transform: skew(-15deg);
     z-index: -1;
@@ -41,5 +41,11 @@
 @media (max-width: 414px) {
   .bg__opacity {
     left: -30%;
+  }
+}
+
+@media (max-width: 375px) {
+  .bg__opacity {
+    left: -70%;
   }
 }

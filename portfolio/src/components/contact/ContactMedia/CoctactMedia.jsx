@@ -51,20 +51,22 @@ class ContactMedia extends Component {
           <MDBIcon far icon="id-card" /> CV
         </MDBBtn>
         {this.state.showMail ? (
-          <MDBContainer>
-            <MDBCard style={{ width: "22rem", marginTop: "1rem" }}>
-              <MDBCardHeader color="red" tag="h3">
-                E-mail Adress
-              </MDBCardHeader>
-              <MDBCardBody>
-                <MDBCardTitle>My adress e-mail</MDBCardTitle>
-                <MDBCardText>ja.tanski@gmail.com</MDBCardText>
-                <MDBBtn onClick={this.showOffMail} color="red">
-                  Close
-                </MDBBtn>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBContainer>
+          <div className="contact__media__mail">
+            <MDBContainer className="contact__media__mail">
+              <MDBCard style={{ width: "20rem", marginTop: "1rem" }}>
+                <MDBCardHeader color="red" tag="h3">
+                  E-mail Adress
+                </MDBCardHeader>
+                <MDBCardBody>
+                  <MDBCardTitle>My adress e-mail:</MDBCardTitle>
+                  <MDBCardText>ja.tanski@gmail.com</MDBCardText>
+                  <MDBBtn onClick={this.showOffMail} color="red">
+                    Close
+                  </MDBBtn>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBContainer>
+          </div>
         ) : null}
       </div>
     )

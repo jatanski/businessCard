@@ -17,6 +17,7 @@
   min-width: 99.1vw;
   min-height: 100vh;
   background-color: #000;
+  cursor: default;
 }
 
 .bgOut {
@@ -40,6 +41,30 @@
   100% {
     left: 200%;
     transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 1680px) {
+  .sectionBg {
+    min-width: 99vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .sectionBg {
+    min-width: 98.9vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .sectionBg {
+    min-width: 98.8vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .sectionBg {
+    min-width: 98.6vw;
   }
 }
 

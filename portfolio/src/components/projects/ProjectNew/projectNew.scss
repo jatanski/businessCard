@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .projectNew {
   margin-left: 3vw;
   margin-bottom: 3vh;
@@ -5,8 +7,8 @@
     position: relative;
     width: 27vw;
     height: 35vh;
-    background-color: #000;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+    background-color: $project-bgc;
+    box-shadow: 0 30px 30px $project-shadow;
     &__imgBx__img {
       position: absolute;
       top: 0;
@@ -23,7 +25,7 @@
       left: 10%;
       width: 80%;
       height: 60px;
-      background-color: #eee;
+      background-color: $main-color;
       transition: 0.7s;
       overflow: hidden;
       padding: 15px;

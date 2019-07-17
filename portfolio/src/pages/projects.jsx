@@ -11,12 +11,12 @@ import ProjectsDesc from "../components/projects/ProjectsDesc/ProjectsDesc"
 import ProjectNew from "../components/projects/ProjectNew/ProjectNew"
 import BgVideo from "../components/general/BgVideo/BgVideo"
 
-import ImgOwl from "../images/owl-min.png"
-import ImgMos from "../images/mos-min.jpg"
-import ImgLC from "../images/lifechat-mini.jpg"
-import ImgCLP from "../images/clp-mini.jpg"
-import ImgNewPort from "../images/newportfolio-mini.jpg"
-import ImgOldPort from "../images/oldportfolio-mini.jpg"
+import ImgOwl from "../images/projects/owl-min.png"
+import ImgMos from "../images/projects/mos-min.jpg"
+import ImgLC from "../images/projects/lifechat-mini.jpg"
+import ImgCLP from "../images/projects/clp-mini.jpg"
+import ImgNewPort from "../images/projects/newportfolio-mini.jpg"
+import ImgOldPort from "../images/projects/oldportfolio-mini.jpg"
 
 import "../styles/pages/projects.scss"
 
@@ -108,7 +108,7 @@ class Projects extends Component {
               <Menu animation={this.animation} active="projects"></Menu>
             </div>
             <BgVideo desktop right="30%"></BgVideo>
-            <BgVideo mobile right="-20%"></BgVideo>
+            <BgVideo mobile right="-80%"></BgVideo>
           </section>
         </div>
       </>

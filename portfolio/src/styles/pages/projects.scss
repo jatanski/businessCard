@@ -23,34 +23,6 @@
   }
 }
 
-.bgOut {
-  overflow: hidden;
-}
-
-.goOut {
-  animation: AnimationOut 1.2s both;
-}
-
-@media (max-width: 1680px) {
-  .projects__cards {
-    margin-right: 35vw;
-  }
-}
-
-@media (max-width: 1600px) {
-  .projects__menu {
-    transform: translateY(-6%);
-  }
-}
-
-@media (max-width: 1024px) {
-  .projects {
-    &__cards {
-      margin-right: 0vw;
-    }
-  }
-}
-
 @keyframes AnimationIn {
   0% {
     left: -100%;
@@ -80,5 +52,63 @@
   100% {
     left: 200%;
     transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 1680px) {
+  .projects__cards {
+    margin-right: 35vw;
+  }
+  .projects {
+    min-width: 99vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .projects {
+    min-width: 98.9vw;
+  }
+  .projects__menu {
+    transform: translateY(-6%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .projects {
+    min-width: 98.8vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .projects {
+    min-width: 98.7vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    top: 70%;
+    min-width: 100vw;
+    &__cards {
+      margin-right: 0vw;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .projects {
+    top: 136%;
+  }
+}
+
+@media (max-width: 375px) {
+  .projects {
+    top: 132%;
+  }
+}
+
+@media (max-width: 320px) {
+  .projects {
+    top: 137%;
   }
 }

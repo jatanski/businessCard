@@ -1,6 +1,21 @@
 .contact__media {
+  position: relative;
   margin-left: 4vw;
   padding-bottom: 10vh;
+  &__mail {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: scale(0);
+    transform-origin: bottom;
+    animation: scaleUpMail 0.5s both;
+  }
+}
+
+@keyframes scaleUpMail {
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 1600px) {
