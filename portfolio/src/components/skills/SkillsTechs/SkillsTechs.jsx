@@ -17,6 +17,7 @@ import {
 } from "../../../svg/icons-mobile"
 
 import "./skillsTechs.scss"
+import "devicon/devicon.css"
 
 const SkillsTechs = () => (
   <div className="skills__techs">

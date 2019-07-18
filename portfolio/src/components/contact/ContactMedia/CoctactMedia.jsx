@@ -47,9 +47,10 @@ class ContactMedia extends Component {
         <MDBBtn onClick={this.showMail} color="red">
           <MDBIcon icon="envelope" className="pr-1" /> Email
         </MDBBtn>
-        <MDBBtn href="" target="_blank" color="default">
+        <MDBBtn href="/test.pdf" target="_blank" download color="default">
           <MDBIcon far icon="id-card" /> CV
         </MDBBtn>
+
         {this.state.showMail ? (
           <div className="contact__media__mail">
             <MDBContainer className="contact__media__mail">
