@@ -33,6 +33,7 @@
 }
 
 .loader__text > span > span > span {
+  position: relative;
   display: inline-block;
   color: $loader-color;
   transform-style: preserve-3d;
@@ -55,24 +56,20 @@
 
 @keyframes OpeningSequence {
   0% {
-    text-shadow: 0 0 50px $loader-color;
     letter-spacing: 80px;
     opacity: 0.2;
     transform: rotateY(-90deg);
   }
   60% {
-    text-shadow: 0 0 1px $loader-color;
     letter-spacing: 10px;
     opacity: 0.8;
     transform: rotateY(0deg);
   }
   90% {
-    text-shadow: 0 0 1px $loader-color;
     opacity: 0.8;
     transform: rotateY(0deg) translateZ(100px);
   }
   100% {
-    text-shadow: 0 0 10px $loader-color;
     opacity: 0;
     transform: translateZ(130px);
     pointer-events: none;

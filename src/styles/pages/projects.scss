@@ -4,7 +4,7 @@
   min-width: 99.1vw;
   min-height: 100vh;
   top: 90%;
-  left: -100%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
   animation: AnimationIn 1.2s both;
   &__info {
@@ -31,35 +31,29 @@
   animation: AnimationOut 1.2s both;
 }
 
-@keyframes AnimationIn {
-  0% {
-    left: -100%;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-
-  66% {
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-  100% {
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
 @keyframes AnimationOut {
   0% {
-    left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
 
   50% {
-    left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
   }
   100% {
-    left: 200%;
+    transform: translate(100%, -50%) scale(0.8);
+  }
+}
+
+@keyframes AnimationIn {
+  0% {
+    transform: translate(-150%, -50%) scale(0.8);
+  }
+
+  66% {
     transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
