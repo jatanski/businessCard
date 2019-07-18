@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -37,6 +38,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",

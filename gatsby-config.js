@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/businessCard",
   siteMetadata: {
     title: `Tanski Portfolio Page`,
     description: `My business card wrote in gatsby and sass.`,
