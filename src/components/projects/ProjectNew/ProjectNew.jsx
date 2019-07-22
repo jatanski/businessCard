@@ -41,6 +41,7 @@ const ProjectBig = props => (
               color="elegant"
               href={props.info.github}
               size="sm"
+              target="_blank"
             >
               <i className="fas fa-code"></i>
             </MDBBtn>
@@ -49,6 +50,7 @@ const ProjectBig = props => (
               color="elegant"
               href={props.info.demo}
               size="sm"
+              target="_blank"
             >
               <i className="fas fa-desktop"></i>
             </MDBBtn>
