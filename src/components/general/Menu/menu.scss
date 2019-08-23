@@ -74,13 +74,11 @@
   }
 
   .menu__list__el .span-navigate:hover {
-    &::after {
-      left: 0vw;
-    }
+    margin-left: 8vw;
   }
 
   .span-navigate.active:hover::after {
-    left: -8vw;
+    left: -6vw;
   }
 }
 
