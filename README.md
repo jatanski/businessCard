@@ -12,10 +12,10 @@ My actual business page. Wrote in gatsby. Styles in Sass.
 * **svg** - all SVG React.js components
 
 ## NPM Packages
-* expressJS,
 * gatsby
-* mdboostrap,
-* react, 
+* react
+* mdboostrap
+* devicon
 
 ## What's in the next version?
 
